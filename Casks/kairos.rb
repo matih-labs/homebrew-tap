@@ -5,8 +5,8 @@
 # Uninstalling runs what Kairos's Settings > Remove Kairos… runs: its
 # background items and files go, accounts and their sign-ins stay.
 cask "kairos" do
-  version "2.0.74"
-  sha256 "e5537d01cc1972100dc7888da63d49cdb9f634f58e9a6170302dbde92c396df2"
+  version "2.0.75"
+  sha256 "461714765c29d7d378d6b87855601a6c60145e2438454d059163f66d75f3a66a"
 
   url "https://github.com/matih-labs/kairos/releases/download/v#{version}/Kairos-#{version}-macOS.dmg"
   name "Kairos"
