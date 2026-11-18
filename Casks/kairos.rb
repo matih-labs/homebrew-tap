@@ -4,9 +4,13 @@
 # Kairos updates itself, so Homebrew leaves updates to it (auto_updates).
 # Uninstalling runs what Kairos's Settings > Remove Kairos… runs: its
 # background items and files go, accounts and their sign-ins stay.
+# Homebrew runs the same step for `brew upgrade`, `brew reinstall` and `brew
+# install` over an installed cask (an uninstall stanza is not told which it is:
+# docs.brew.sh/Cask-Cookbook), so the engine reads the process table and, under
+# those, removes nothing (2.0.81, claude-rotation homebrew_replacing_kairos).
 cask "kairos" do
-  version "2.0.80"
-  sha256 "c486c03a7f2d1980e411bfe6bd95177a6533b54c84c1f7b93207ad83359d47c5"
+  version "2.0.81"
+  sha256 "fae30119ec4a391a34d8c8949fa37f21b6e736dbacf2d186e40742f76a432970"
 
   url "https://github.com/matih-labs/kairos/releases/download/v#{version}/Kairos-#{version}-macOS.dmg"
   name "Kairos"
