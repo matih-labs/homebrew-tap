@@ -9,8 +9,8 @@
 # docs.brew.sh/Cask-Cookbook), so the engine reads the process table and, under
 # those, removes nothing (2.0.81, claude-rotation homebrew_replacing_kairos).
 cask "kairos" do
-  version "2.0.85"
-  sha256 "0f47b412027c7ca148b260def19ee8b312d6684cf114087f6f976ffcf275fba2"
+  version "2.0.86"
+  sha256 "f4a476aeb5e137c9bf031c10a9084bf7ccb19e3eb35afe0065a31ef677b2eef3"
 
   url "https://github.com/matih-labs/kairos/releases/download/v#{version}/Kairos-#{version}-macOS.dmg"
   name "Kairos"
